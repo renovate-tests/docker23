@@ -1,5 +1,9 @@
-FROM node:14.10.0 AS abc
+ARG PYTHON_VERS=3.9-slim
 
-FROM node:16.10.0 AS def
+FROM python:${PYTHON_VERS} AS builder
 
-RUN something
+...
+
+FROM python:${PYTHON_VERS}
+
+...
