@@ -1,4 +1,4 @@
-ARG PYTHON_VERS=3.9-slim
+ARG PYTHON_VERS=3.11-slim
 
 FROM python:${PYTHON_VERS} AS builder
 
